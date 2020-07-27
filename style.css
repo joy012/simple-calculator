@@ -1,8 +1,10 @@
 *{
     box-sizing: border-box;
-    font-size: 1rem;
+    margin: 0;
+    padding: 0;
 }
 body{
+    font-family: 'Open Sans',sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,9 +14,9 @@ body{
 }
 
 .calculator-body{
-    width: 350px;
-    background-color: rgb(81, 81, 99);
-    box-shadow: 5px 5px 10px lightslategray, -5px -5px 10px lightslategray;
+    width: 330px;
+    background-color: #eee;
+    box-shadow: 5px 5px 10px lightgrey, -5px -5px 10px lightgrey;
     border-radius: 10px;
     padding: 1.1rem;
 }
@@ -22,32 +24,43 @@ body{
     width: 100%;
     text-align: right;
     padding: 0.3rem;
-    font-size: 2.2rem;
-    background-color: rgb(241, 239, 239);
+    font-size: 2rem;
+    background-color: rgb(253, 251, 251);
     border-radius: 8px;
     overflow: auto;
 }
+#history{
+    color: #919191;
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+}
 .row{
-    width: 90%;
     display: flex;
     justify-content: space-between;
-    margin: auto;
 }
-.btn{
-    height: 40px!important;
-    width: 40px!important;
+button{
+    font-size: 1.1rem;
+    height: 50px;
+    width: 50px!important;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    margin: 1rem;
+    margin: 0.8rem 0.6rem;
     border: none;
-    border-radius: 5px;
-    background-color: white;
+    border-radius: 50%;
     cursor: pointer;
 }
-.btn:focus{
+button:focus{
     outline: none;
+}
+.number{
+    background-color: #eee;
+}
+.digit:active{
+    background-color: lightslategray;
+    color: white;
+    font-size: 0.9rem;
 }
 #clear{
     background-color: #db1c15;
@@ -61,25 +74,30 @@ body{
 .operator{
     background-color: dodgerblue;
     color: white;
-    border-radius: 50%;
+}
+.operator:active{
+    font-size: 1rem;
+    background-color: skyblue;
 }
 #equal{
-    background-color: #5cb85c;
-    width: 32%!important;
+    background-color: rgb(50, 161, 50);
+    width: 40%!important;
+    border-radius: 10px;
     color: white;
+}
+#equal:active{
+    background-color: #5cb85c;
 }
 @media screen and (max-width:300px){
     *{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .calculator-body{
         width: 100%;
-        height: 100vh;
+        height: 90vh;
     }
-    .row{
-        width: 100%;
-    }
-    .btn{
+    button{
         box-sizing: border-box;
+        font-size: 1rem;
     }
 }
