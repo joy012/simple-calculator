@@ -65,6 +65,8 @@ button:focus{
 #clear{
     background-color: #db1c15;
     color: white;
+    width: 40%!important;
+    border-radius: 10px;
 }
 #backspace{
     background-color: orange;
