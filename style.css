@@ -16,7 +16,7 @@ body{
 .calculator-body{
     width: 330px;
     background-color: #eee;
-    box-shadow: 5px 5px 10px lightgrey, -5px -5px 10px lightgrey;
+    box-shadow: 5px 5px 10px gray, -5px -5px 10px gray;
     border-radius: 10px;
     padding: 1.1rem;
 }
@@ -26,7 +26,7 @@ body{
     text-align: right;
     padding: 0.4rem;
     font-size: 1.6rem;
-    background-color: rgb(253, 251, 251);
+    background-color: white;
     border-radius: 8px;
 }
 #history{
@@ -54,11 +54,11 @@ button{
 button:focus{
     outline: none;
 }
-.number{
+.digit{
     background-color: #eee;
 }
 .digit:active{
-    background-color: lightslategray;
+    background-color: grey;
     color: white;
     font-size: 1.1rem;
 }
@@ -66,7 +66,7 @@ button:focus{
     background-color: #db1c15;
     color: white;
 }
-#delete{
+#backspace{
     background-color: orange;
     color: white;
 
