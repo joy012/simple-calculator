@@ -15,6 +15,7 @@ function printResult(num){
         document.getElementById('result-value').innerText = getCommaSeparateNum(num);
     }
 }
+
 // return number separated with comma
 function getCommaSeparateNum(num){
     if(num === '-'){
@@ -80,5 +81,4 @@ for (let i = 0; i < digit.length; i++) {
             printResult(output);
         }
     })
-    
 }
